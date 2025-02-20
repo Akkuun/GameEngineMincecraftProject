@@ -68,9 +68,9 @@ add_executable(TP1
 	common/vboindexer.hpp
 		common/image_utils.cpp
 		common/progressbar.cpp
-	
-        TP1/vertex_shader.glsl
-        TP1/fragment_shader.glsl
+
+		shaders/vertex_shader.glsl
+		shaders/fragment_shader.glsl
 )
 target_link_libraries(TP1
 	${ALL_LIBS}

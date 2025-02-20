@@ -108,7 +108,7 @@ int main(void) {
 
 
     // Create and compile our GLSL program from the shaders
-    GLuint programID = LoadShaders("vertex_shader.glsl", "fragment_shader.glsl");
+    GLuint programID = LoadShaders("../shaders/vertex_shader.glsl", "../shaders/fragment_shader.glsl");
     if (programID == 0) {
         std::cerr << "Failed to load shaders" << std::endl;
         return -1;
