@@ -157,10 +157,10 @@ int main(void) {
     // Load the texture
     OCTET *ImgIn;
     int nH, nW;
-    lire_nb_lignes_colonnes_image_ppm("../img/vegetation.ppm", &nH, &nW);
+    lire_nb_lignes_colonnes_image_ppm("../assets/textures/vegetation.ppm", &nH, &nW);
     int nTaille = nH * nW;
     allocation_tableau(ImgIn, OCTET, nTaille * 3);
-    lire_image_ppm("../img/vegetation.ppm", ImgIn, nH * nW);
+    lire_image_ppm("../assets/textures/vegetation.ppm", ImgIn, nH * nW);
     // création de la texture OpenGL
     GLuint texture;
     glGenTextures(1, &texture);
